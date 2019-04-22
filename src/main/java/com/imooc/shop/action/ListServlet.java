@@ -84,7 +84,7 @@ public class ListServlet extends HttpServlet {
         List<ArticleType> firstArticleTypes = shopService.loadFirstArticleTypes();
         //获取目录下所有的商品
         List<Article> articles = shopService.searchArticles(typeCode,secondType,title,pager);
-        request.setAttribute("pager", pager);
+         request.setAttribute("pager", pager);
         request.setAttribute("articles", articles);
         request.setAttribute("firstArticleTypes", firstArticleTypes);
          request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request, response);
