@@ -87,6 +87,6 @@ public class ListServlet extends HttpServlet {
         request.setAttribute("pager", pager);
         request.setAttribute("articles", articles);
         request.setAttribute("firstArticleTypes", firstArticleTypes);
-        request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request, response);
+         request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request, response);
     }
 }
