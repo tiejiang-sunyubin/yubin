@@ -38,8 +38,8 @@ public class ListServlet extends HttpServlet {
 
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            try {
+    protected void service(HttpServletRequest req, HttpServletResponse resp)  {
+            try{
 
                 this.request = req;
                 this.response = resp;
